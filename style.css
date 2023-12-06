@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -15,18 +19,24 @@ header {
     top: 0;
     height: 5rem;
     width: 100%;
+    z-index: 5;
 }
 
-header .home {
+header #home {
     font-size: 1rem;
     margin: 0 0 0 1rem;
 }
 
-header .home h1 {
+header #home h1 {
     margin: 0;
 }
 
-header .home p {
+header #home h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+header #home p {
     margin: 0;
 }
 
@@ -51,10 +61,37 @@ header nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
+    transition: .1s;
+}
+
+header nav ul li a:hover {
+    border-bottom: 3px solid white;
 }
 
 header .language {
     margin: 0 1rem 0 0;
+}
+
+header .language select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+header .language select:hover {
+    border-bottom: 3px solid white;
+}
+
+header .language select option {
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -75,49 +112,49 @@ header .language {
     }
 }
 
-main .splash {
+main #splash {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background.jpg);
     background-size: cover;
 }
 
-main .splash .splash-content {
+main #splash .splash-content {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main .splash .splash-content img {
+main #splash .splash-content img {
     height: 50vh;
 }
 
-main .splash .splash-content .splash-text {
+main #splash .splash-content .splash-text {
     margin-left: 2rem;
 }
 
-main .splash .splash-content .splash-text h2 {
+main #splash .splash-content .splash-text h2 {
     font-size: 3rem;
     margin: 0;
 }
 
-main .splash .splash-content .splash-text p {
+main #splash .splash-content .splash-text p {
     font-size: 1.5rem;
     margin: 0;
 }
 
-main .about {
+main #about {
     height: auto;
-    padding: 2.5rem 0;
 }
 
-main .about h2 {
+main #about h2 {
     font-size: 2rem;
     text-align: center;
+    padding: 5rem 0 0 0;
     margin: 0;
 }
 
-main .about .about-content {
+main #about .about-content {
     padding: 3vh 0;
     display: flex;
     flex-direction: column;
@@ -125,7 +162,7 @@ main .about .about-content {
     background-color: darkgrey;
 }
 
-main .about .about-content .card {
+main #about .about-content .card {
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -133,32 +170,32 @@ main .about .about-content .card {
     align-items: center;
 }
 
-main .about .about-content .card1 {
+main #about .about-content .card1 {
     margin-bottom: 3rem;
 }
 
-main .about .about-content img {
+main #about .about-content img {
     height: 30vh;
     margin-right: 5rem;
 }
 
-main .about .about-content p {
+main #about .about-content p {
     max-width: 25%;
     margin: 0;
 }
 
-main .experience {
+main #experience {
     height: auto;
-    padding: 2.5rem 0;
 }
 
-main .experience h2 {
+main #experience h2 {
     font-size: 2rem;
     text-align: center;
+    padding: 5rem 0 0 0;
     margin: 0;
 }
 
-main .experience .experience-content {
+main #experience .experience-content {
     padding: 3vh 0;
     display: flex;
     justify-content: center;
@@ -166,57 +203,58 @@ main .experience .experience-content {
     gap: 3rem;
 }
 
-main .experience .experience-content .experience-title {
+main #experience .experience-content .experience-title {
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
-main .experience .experience-content .experience-title h3 {
+main #experience .experience-content .experience-title h3 {
     margin: 0;
 }
 
-main .experience .experience-content .experience-title p {
+main #experience .experience-content .experience-title p {
     margin: 0;
 }
 
-main .experience .experience-content p.description {
+main #experience .experience-content p.description {
     margin: 0;
     max-width: 30%;
 }
 
-main .studies {
+main #studies {
     height: auto;
 }
 
-main .studies h2 {
+main #studies h2 {
     font-size: 2rem;
     text-align: center;
+    padding: 5rem 0 0 0;
     margin: 0;
 }
 
-main .studies .studies-content {
+main #studies .studies-content {
     padding: 3vh 0;
     display: grid;
     grid-template-columns: 2fr 3fr;
     background-color: darkgrey;
 }
 
-main .studies .studies-content .studies-title {
+main #studies .studies-content .studies-title {
     justify-self: end;
     margin: 1rem 0;
 }
 
-main .studies .studies-content .studies-title h3 {
+main #studies .studies-content .studies-title h3 {
     justify-self: end;
     margin: 0;
 }
 
-main .studies .studies-content .studies-title p {
+main #studies .studies-content .studies-title p {
     margin: 0;
 }
 
-main .studies .studies-content p.description {
+main #studies .studies-content p.description {
     margin: 1rem 0 1rem 6.5rem;
     width: 50%;
 }
@@ -225,7 +263,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5rem;
+    padding: 3rem 0;
     background-color: black;
 }
 
@@ -243,15 +281,15 @@ footer a img {
         height: 6rem;
     }
 
-    header .home {
+    header #home {
         font-size: 1.2rem;
     }
 
-    header .home h1 {
+    header #home h1 {
         font-size: 1.5rem;
     }
 
-    header .home p {
+    header #home p {
         font-size: 1rem;
     }
 
@@ -271,50 +309,50 @@ footer a img {
         font-size: 1rem;
     }
 
-    main .splash .splash-content {
+    main #splash .splash-content {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
 
-    main .splash .splash-content img {
+    main #splash .splash-content img {
         height: 40vh;
     }
 
-    main .splash .splash-content .splash-text {
+    main #splash .splash-content .splash-text {
         margin-left: 0;
         margin-top: 2rem;
     }
 
-    main .splash .splash-content .splash-text h2 {
+    main #splash .splash-content .splash-text h2 {
         font-size: 2.5rem;
     }
 
-    main .splash .splash-content .splash-text p {
+    main #splash .splash-content .splash-text p {
         font-size: 1.2rem;
     }
 
-    main .about {
+    main #about {
         padding: 3rem 0;
     }
 
-    main .about h2 {
+    main #about h2 {
         font-size: 2.5rem;
     }
 
-    main .about .about-content .card {
+    main #about .about-content .card {
         flex-direction: column;
         gap: 2rem;
         align-items: flex-start;
     }
 
-    main .about .about-content img {
+    main #about .about-content img {
         height: 20vh;
         margin-right: 0;
         margin-bottom: 2rem;
     }
 
-    main .about .about-content p {
+    main #about .about-content p {
         max-width: 100%;
     }
 }

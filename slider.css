@@ -1,15 +1,16 @@
-main .projects {
+main #projects {
     height: auto;
     overflow: hidden;
 }
 
-main .projects h2 {
+main #projects h2 {
     font-size: 2rem;
     text-align: center;
+    padding: 5rem 0 0 0;
     margin: 0;
 }
 
-main .projects .projects-content {
+main #projects .projects-content {
     padding: 3vh 0;
     background-color: darkgrey;
     width: 400%;
@@ -18,18 +19,18 @@ main .projects .projects-content {
     position: relative;
 }
 
-main .projects .projects-content input {
+main #projects .projects-content input {
     display: none;
 }
 
-main .projects .projects-content .slide-box {
+main #projects .projects-content .slide-box {
     text-align: center;
     width: 25%;
     height: auto;
     transition: 1s;
 }
 
-main .projects .projects-content .manual-nav, .auto-nav {
+main #projects .projects-content .manual-nav, .auto-nav {
     position: absolute;
     bottom: 0;
     width: 25%;
@@ -37,7 +38,7 @@ main .projects .projects-content .manual-nav, .auto-nav {
     justify-content: center;
 }
 
-main .projects .projects-content .manual-nav label, .auto-nav div {
+main #projects .projects-content .manual-nav label, .auto-nav div {
     border: 1px solid red;
     border-radius: 50%;
     padding: 1rem;
@@ -46,42 +47,42 @@ main .projects .projects-content .manual-nav label, .auto-nav div {
     transition: 0.4s;
 }
 
-main .projects .projects-content .manual-nav label:hover {
+main #projects .projects-content .manual-nav label:hover {
     background-color: aliceblue;
 }
 
-main .projects .projects-content 
+main #projects .projects-content 
 #radio-btn1:checked ~ .auto-nav div:nth-child(1), 
 #radio-btn2:checked ~ .auto-nav div:nth-child(2), 
 #radio-btn3:checked ~ .auto-nav div:nth-child(3) {
     background-color: aliceblue;
 }
 
-main .projects .projects-content #radio-btn1:checked ~ .slide-box {
+main #projects .projects-content #radio-btn1:checked ~ .slide-box {
     transform: translateX(0);
 }
 
-main .projects .projects-content #radio-btn2:checked ~ .slide-box {
+main #projects .projects-content #radio-btn2:checked ~ .slide-box {
     transform: translateX(-100%);
 }
 
-main .projects .projects-content #radio-btn3:checked ~ .slide-box {
+main #projects .projects-content #radio-btn3:checked ~ .slide-box {
     transform: translateX(-200%);
 }
 @media (max-width: 768px) {
-    main .projects .projects-content {
+    main #projects .projects-content {
         width: 100%;
     }
     
-    main .projects .projects-content .slide-box {
+    main #projects .projects-content .slide-box {
         width: 300%;
     }
     
-    main .projects .projects-content .manual-nav, .auto-nav {
+    main #projects .projects-content .manual-nav, .auto-nav {
         width: 100%;
     }
 
-    main .projects .projects-content .slide-box img {
+    main #projects .projects-content .slide-box img {
         width: 100vw;
     }
 }
