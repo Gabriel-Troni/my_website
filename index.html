@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
     <title>Gabriel's Website</title>
 </head>
 <body>
@@ -41,32 +42,92 @@
         <section class="about">
             <h2>Sobre mim</h2>
             <div class="about-content">
-                <img src="./images/about.jpg" alt="my-photo"> 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam qui amet tempore quia id. Deserunt earum pariatur consequatur laudantium incidunt unde, molestias optio beatae officiis impedit provident dolores blanditiis quaerat.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam qui amet tempore quia id. Deserunt earum pariatur consequatur laudantium incidunt unde, molestias optio beatae officiis impedit provident dolores blanditiis quaerat.</p>
-                <img src="./images/about.jpg" alt="my-photo"> 
+                <div class="card card1">
+                    <img src="./images/about.jpg" alt="my-photo"> 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam qui amet tempore quia id. Deserunt earum pariatur consequatur laudantium incidunt unde, molestias optio beatae officiis impedit provident dolores blanditiis quaerat.</p>
+                </div>
+                <div class="card card2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam qui amet tempore quia id. Deserunt earum pariatur consequatur laudantium incidunt unde, molestias optio beatae officiis impedit provident dolores blanditiis quaerat.</p>
+                    <img src="./images/about.jpg" alt="my-photo"> 
+                </div>
             </div>
         </section>
         <section class="projects">
+            <h2>Projetos</h2>
             <div class="projects-content">
-                <h2>Projetos</h2>
+                <input type="radio" name="radio-btn" id="radio-btn1">
+                <input type="radio" name="radio-btn" id="radio-btn2">
+                <input type="radio" name="radio-btn" id="radio-btn3">
+
+                <div class="slide-box first">
+                    <a href="#"><img src="./images/slide1.jpg" alt="#"></a>
+                </div>
+                <div class="slide-box">
+                    <a href="#"><img src="./images/slide1.jpg" alt="#"></a>
+                </div>
+                <div class="slide-box">
+                    <a href="#"><img src="./images/slide1.jpg" alt="#"></a>
+                </div>
+
+                <div class="auto-nav">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="manual-nav">
+                    <label for="radio-btn1"></label>
+                    <label for="radio-btn2"></label>
+                    <label for="radio-btn3"></label>
+                </div>
             </div>
         </section>
         <section class="experience">
+            <h2>Experiência Profissional</h2>
             <div class="experience-content">
-                <h2>Experiência Profissional</h2>
+                <div class="experience-title">
+                    <h3>APK Logística e Transporte</h3>
+                    <p>Março de 2023 - Atualmente</p>
+                </div>
+                <p class="description">Principais atividades: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam fugit nam a. Autem ut amet laudantium, neque error fugit, tempora repellat recusandae sed et dolorem veniam, hic voluptas rerum?</p>
             </div>
         </section>
         <section class="studies">
+            <h2>Estudos e Premiações</h2>
             <div class="studies-content">
-                <h2>Estudos e Premiações</h2>
+                <div class="studies-title">
+                    <h3>Livro de SQL</h3>
+                    <p>Março de 2023 - Atualmente</p>
+                </div>
+                <p class="description">Principais atividades: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam fugit nam a. Autem ut amet laudantium, neque error fugit, tempora repellat recusandae sed et dolorem veniam, hic voluptas rerum?</p>
+                <div class="studies-title">
+                    <h3>Livro de SQL</h3>
+                    <p>Março de 2023 - Atualmente</p>
+                </div>
+                <p class="description">Principais atividades: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam fugit nam a. Autem ut amet laudantium, neque error fugit, tempora repellat recusandae sed et dolorem veniam, hic voluptas rerum?</p>
+                <div class="studies-title">
+                    <h3>Livro de SQL</h3>
+                    <p>Março de 2023 - Atualmente</p>
+                </div>
+                <p class="description">Principais atividades: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam fugit nam a. Autem ut amet laudantium, neque error fugit, tempora repellat recusandae sed et dolorem veniam, hic voluptas rerum?</p>
+                <div class="studies-title">
+                    <h3>Livro de SQL</h3>
+                    <p>Março de 2023 - Atualmente</p>
+                </div>
+                <p class="description">Principais atividades: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ullam fugit nam a. Autem ut amet laudantium, neque error fugit, tempora repellat recusandae sed et dolorem veniam, hic voluptas rerum?</p>
             </div>
         </section>
         <footer>
             <div class="footer-content">
-                <h2>Contato</h2>
+                <a href="#"><img src="./images/github.png" alt=""></a>
+                <a href="#"><img src="./images/gmail.png" alt=""></a>
+                <a href="#"><img src="./images/instagram.png" alt=""></a>
+                <a href="#"><img src="./images/linkedin.png" alt=""></a>
+                <a href="#"><img src="./images/whatsapp.png" alt=""></a>
+                <p>2023 * Gabriel Alamartini Troni</p>
             </div>
         </footer>
     </main>
+    <script src="./slider.js"></script>
 </body>
 </html>

@@ -107,22 +107,34 @@ main .splash .splash-content .splash-text p {
 }
 
 main .about {
-    height: 50vh;
-    padding: 2.5rem;
+    height: auto;
+    padding: 2.5rem 0;
 }
 
 main .about h2 {
+    font-size: 2rem;
+    text-align: center;
     margin: 0;
 }
 
 main .about .about-content {
-    height: fit-content;
     padding: 3vh 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     background-color: darkgrey;
+}
+
+main .about .about-content .card {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about .about-content .card1 {
+    margin-bottom: 3rem;
 }
 
 main .about .about-content img {
@@ -133,4 +145,176 @@ main .about .about-content img {
 main .about .about-content p {
     max-width: 25%;
     margin: 0;
+}
+
+main .experience {
+    height: auto;
+    padding: 2.5rem 0;
+}
+
+main .experience h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+main .experience .experience-content {
+    padding: 3vh 0;
+    display: flex;
+    justify-content: center;
+    background-color: darkgrey;
+    gap: 3rem;
+}
+
+main .experience .experience-content .experience-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main .experience .experience-content .experience-title h3 {
+    margin: 0;
+}
+
+main .experience .experience-content .experience-title p {
+    margin: 0;
+}
+
+main .experience .experience-content p.description {
+    margin: 0;
+    max-width: 30%;
+}
+
+main .studies {
+    height: auto;
+}
+
+main .studies h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+main .studies .studies-content {
+    padding: 3vh 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    background-color: darkgrey;
+}
+
+main .studies .studies-content .studies-title {
+    justify-self: end;
+    margin: 1rem 0;
+}
+
+main .studies .studies-content .studies-title h3 {
+    justify-self: end;
+    margin: 0;
+}
+
+main .studies .studies-content .studies-title p {
+    margin: 0;
+}
+
+main .studies .studies-content p.description {
+    margin: 1rem 0 1rem 6.5rem;
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    background-color: black;
+}
+
+footer a img {
+    height: 5vh;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        height: 6rem;
+    }
+
+    header .home {
+        font-size: 1.2rem;
+    }
+
+    header .home h1 {
+        font-size: 1.5rem;
+    }
+
+    header .home p {
+        font-size: 1rem;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav ul li {
+        margin-bottom: 0;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    main .splash .splash-content {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    main .splash .splash-content img {
+        height: 40vh;
+    }
+
+    main .splash .splash-content .splash-text {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    main .splash .splash-content .splash-text h2 {
+        font-size: 2.5rem;
+    }
+
+    main .splash .splash-content .splash-text p {
+        font-size: 1.2rem;
+    }
+
+    main .about {
+        padding: 3rem 0;
+    }
+
+    main .about h2 {
+        font-size: 2.5rem;
+    }
+
+    main .about .about-content .card {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    main .about .about-content img {
+        height: 20vh;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    main .about .about-content p {
+        max-width: 100%;
+    }
 }
