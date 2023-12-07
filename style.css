@@ -157,26 +157,20 @@ main #about h2 {
 main #about .about-content {
     padding: 3vh 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    background-color: darkgrey;
+    background-color: rgb(25, 25, 25);
 }
 
 main #about .about-content .card {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
     justify-content: center;
     align-items: center;
 }
 
-main #about .about-content .card1 {
-    margin-bottom: 3rem;
-}
-
 main #about .about-content img {
-    height: 30vh;
-    margin-right: 5rem;
+    height: 40vh;
 }
 
 main #about .about-content p {
@@ -199,7 +193,7 @@ main #experience .experience-content {
     padding: 3vh 0;
     display: flex;
     justify-content: center;
-    background-color: darkgrey;
+    background-color: rgb(25, 25, 25);
     gap: 3rem;
 }
 
@@ -237,7 +231,7 @@ main #studies .studies-content {
     padding: 3vh 0;
     display: grid;
     grid-template-columns: 2fr 3fr;
-    background-color: darkgrey;
+    background-color: rgb(25, 25, 25);
 }
 
 main #studies .studies-content .studies-title {
@@ -261,14 +255,20 @@ main #studies .studies-content p.description {
 
 footer {
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
-    background-color: black;
+    margin-top: 1rem;
+    background-color: rgb(25, 25, 25);
+}
+
+footer h2 {
+    margin: 2rem;
 }
 
 footer a img {
     height: 5vh;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {

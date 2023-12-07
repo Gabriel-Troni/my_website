@@ -12,7 +12,7 @@ main #projects h2 {
 
 main #projects .projects-content {
     padding: 3vh 0;
-    background-color: darkgrey;
+    background-color: rgb(25, 25, 25);
     width: 400%;
     height: auto;
     display: flex;
@@ -30,6 +30,23 @@ main #projects .projects-content .slide-box {
     transition: 1s;
 }
 
+main #projects .projects-content .slide-box img {
+    height: 36vh;
+}
+
+main #projects .projects-content .slide-box .project-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main #projects .projects-content .slide-box .project-text p {
+    max-width: 50%;
+    margin: 0 0 1rem 0;
+}
+
+
 main #projects .projects-content .manual-nav, .auto-nav {
     position: absolute;
     bottom: 0;
@@ -39,10 +56,10 @@ main #projects .projects-content .manual-nav, .auto-nav {
 }
 
 main #projects .projects-content .manual-nav label, .auto-nav div {
-    border: 1px solid red;
+    border: 1px solid white;
     border-radius: 50%;
-    padding: 1rem;
-    margin: 0 0.25rem;
+    padding: .5rem;
+    margin: .25rem;
     cursor: pointer;
     transition: 0.4s;
 }
