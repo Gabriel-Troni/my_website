@@ -29,7 +29,7 @@ btn1.addEventListener('click', () => {
 })
 
 btn2.addEventListener('click', () => {
-    delayInterval
+    delayInterval()
 })
 
 btn3.addEventListener('click', () => {

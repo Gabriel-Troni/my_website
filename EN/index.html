@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../slider.css">
+    <title>Gabriel's Website</title>
+</head>
+<body>
+    <header>
+        <div id="home">
+            <h1><a href="#splash">Gabriel Troni</a></h1>
+            <p>SQL Developer</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#studies">Studies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="language">
+            <select id="languageSelect">
+                <option value="EN">EN</option>
+                <option value="PTBR">PT-BR</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section id="splash">
+            <div class="splash-content">
+                <!-- <img src="./images/main_photo.png" alt="Foto do Gabriel"> -->
+                <div class="splash-text">
+                    <h2>Hello, I am Gabriel</h2>
+                    <p>Welcome to my website!</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About me</h2>
+            <div class="about-content">
+                <div class="card card1">
+                    <img src="../images/about.png" alt="my-photo"> 
+                    <p>
+                        I was born in Ji-Paraná, in the State of Rondônia and lived there for 20 years.
+                        In 2023, I moved to Curitiba, in Paraná, to attend college.
+                        I am in the third semester of Systems Analysis and Development at the 
+                        Federal University of Paraná (UFPR).
+                        Currently, I work as an IT Apprentice at APK Logística e Transporte.
+                        I am passionate about technology and learning new things.
+                        My hobbies are playing computer games, watching anime, and playing RPGs.
+                    </p>
+                </div>
+            </div>
+        </section>        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-content">
+                <input type="radio" name="radio-btn" id="radio-btn1">
+                <input type="radio" name="radio-btn" id="radio-btn2">
+                <input type="radio" name="radio-btn" id="radio-btn3">
+        
+                <div class="slide-box first">
+                    <a href="https://github.com/Gabriel-Troni/country_search" target="_blank"><img src="../images/project1.PNG" alt="Project 'Country Search' screen"></a>
+                    <div class="project-text">
+                        <h3>Country Search</h3>
+                        <p>
+                            Technologies used: PHP, SQL, HTML, Bootstrap, and CSS
+                        </p>
+                        <p>
+                            Project developed with Matheus Grego do Amaral for the Web Programming I course. The goal was to create a website that connects to a database and, in response to a POST request, displays search results on the screen according to the user's input for filters, sorting, and result limits. All input fields had to undergo sanitization and additional validations.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-box">
+                    <a href="https://github.com/Gabriel-Troni/crack_the_code_game"><img src="../images/project2.png" alt="Project 'Crack the Code' screen"></a>
+                    <div class="project-text">
+                        <h3>Crack the Code</h3>
+                        <p>
+                            Technologies used: PHP, SQL, Javascript, CSS, and HTML
+                        </p>
+                        <p>
+                            Project developed with Matheus Grego, Raul Bana, and Rodolfo dos Santos for the Web Programming I course. The goal was to create a typing game with its own database to store data for each player, such as login, password, name, and score for each game. The game also features a league and ranking system. In this project, I primarily worked on database modeling, SQL queries, and backend validations.
+                        </p>
+                    </div>
+                </div>
+                <div class="slide-box">
+                    <a href="#"><img src="../images/project3.png" alt="Project 'Link Aggregator' screen"></a>
+                    <div class="project-text">
+                        <h3>Front-End Projects</h3>
+                        <p>
+                            Technologies used: HTML, CSS, and Javascript
+                        </p>
+                        <p>
+                            Projects developed during courses, bootcamps, and programming marathons. Among these projects are a link aggregator (image), a Netflix clone, and a memory game. The main goal was to learn front-end concepts such as semantic HTML, responsiveness, flexbox, grid, animations, and DOM manipulation.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="auto-nav">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+        
+                <div class="manual-nav">
+                    <label for="radio-btn1"></label>
+                    <label for="radio-btn2"></label>
+                    <label for="radio-btn3"></label>
+                </div>
+            </div>
+        </section>        
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-content">
+                <div class="experience-title">
+                    <h3>IT Apprentice</h3>
+                    <p>APK Logística e Transporte</p>
+                    <p>March 2023 - Present</p>
+                </div>
+                <p class="description">
+                    Main activities: Creating and maintaining reports, views, and stored procedures in MSSQL, optimizing SQL queries, creating Excel dashboards, developing corporate applications using jQuery, PHP, and MySQL, documenting and supporting users in ERP systems, and other systems.
+                </p>
+            </div>
+        </section>
+        <section id="studies">
+            <h2>Education and Awards</h2>
+            <p class="note">Note: The complete list of educational achievements is available on my LinkedIn</p>
+            <div class="studies-content">
+                <div class="studies-title">
+                    <h3>Book: Learning SQL</h3>
+                    <p>O'Reilly/Novatech Publisher</p>
+                    <p>July 2023</p>
+                </div>
+                <p class="description">
+                    In this book, I learned from the basics of SQL to more advanced concepts, such as data manipulation, subqueries, joins, views, transactions, indexes, and metadata.
+                </p>
+                <div class="studies-title">
+                    <h3>Course: Intermediate English (B1)</h3>
+                    <p>Busuu</p>
+                    <p>July 2023</p>
+                </div>
+                <p class="description">
+                    In this course, I notably improved my ability to read and interpret texts, being able to understand scientific articles relatively easily, express opinions on various topics, comprehend spoken English, and expand my vocabulary.
+                </p>
+                <div class="studies-title">
+                    <h3>Course: MySQL</h3>
+                    <p>Curso em Vídeo</p>
+                    <p>March 2023 - June 2023</p>
+                </div>
+                <p class="description">
+                    In this course, I learned to create databases, create and alter tables in MySQL, insert, update, and delete data, and make queries with filters, sorting, grouping, and table joining. I also learned to generate dumps via Workbench.
+                </p>
+                <div class="studies-title">
+                    <h3>Award: Bronze Medal</h3>
+                    <p>OBMEP</p>
+                    <p>2014 and 2017</p>
+                </div>
+                <p class="description">
+                    Awarded for good performance in the Brazilian Public School Mathematics Olympiad (OBMEP). When I received the awards in 2014 and 2017, I was in the 6th and 9th grades of elementary school, respectively.
+                </p>
+                <div class="studies-title">
+                    <h3>Award: Honorable Mention</h3>
+                    <p>OBMEP</p>
+                    <p>2015</p>
+                </div>
+                <p class="description">
+                    Awarded for good performance in the Brazilian Public School Mathematics Olympiad (OBMEP). When I received the award, I was in the 7th grade of elementary school, at the age of 12.
+                </p>
+            </div>
+        </section>        
+        <footer>
+            <div id="footer-content">
+                <h2 id="contact">Contact</h2>
+                <a href="https://github.com/Gabriel-Troni" target="_blank"><img src="../images/github.png" alt="GitHub logo"></a>
+                <a href="mailto:troni.gabriel.10@gmail.com?cc=gabriel.troni@ufpr.br" target="_blank"><img src="../images/gmail.png" alt="Gmail logo"></a>
+                <a href="https://www.instagram.com/gabrieltroni/" target="_blank"><img src="../images/instagram.png" alt="Instagram logo"></a>
+                <a href="https://www.linkedin.com/in/gabriel-troni/" target="_blank"><img src="../images/linkedin.png" alt="LinkedIn logo"></a>
+                <a href="https://api.whatsapp.com/send?phone=5569992182298" target="_blank"><img src="../images/whatsapp.png" alt="WhatsApp logo"></a>
+                <p>2023 &bull; Gabriel Alamartini Troni</p>
+            </div>
+        </footer>        
+    </main>
+    <script src="../slider.js"></script>
+    <script type="module" src="../translate.js"></script>
+</body>
+</html>
