@@ -5,8 +5,9 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     color: white;
-    background-color: black;
     margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background2-sub.jpg);
+    background-size:contain;
 }
 
 header {
@@ -114,7 +115,7 @@ header .language select option {
 
 main #splash {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background2.jpg);
     background-size: cover;
 }
 
@@ -159,7 +160,6 @@ main #about .about-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(25, 25, 25);
 }
 
 main #about .about-content .card {
@@ -191,16 +191,15 @@ main #experience h2 {
 
 main #experience .experience-content {
     padding: 3vh 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(25, 25, 25);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
 
 main #experience .experience-content .experience-title {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+    margin: .5rem 0;
+    width: 20vw;
+    justify-self: right;
 }
 
 main #experience .experience-content .experience-title h3 {
@@ -212,8 +211,8 @@ main #experience .experience-content .experience-title p {
 }
 
 main #experience .experience-content p.description {
-    margin: 0;
-    max-width: 30%;
+    margin: .5rem 0;
+    width: 50%;
 }
 
 main #studies {
@@ -227,20 +226,25 @@ main #studies h2 {
     margin: 0;
 }
 
+main #studies p.note {
+    text-align: center;
+    margin: 0;
+}
+
 main #studies .studies-content {
     padding: 3vh 0;
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    background-color: rgb(25, 25, 25);
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
 
 main #studies .studies-content .studies-title {
-    justify-self: end;
-    margin: 1rem 0;
+    margin: .5rem 0;
+    width: 20vw;
+    justify-self: right;
 }
 
 main #studies .studies-content .studies-title h3 {
-    justify-self: end;
     margin: 0;
 }
 
@@ -249,7 +253,7 @@ main #studies .studies-content .studies-title p {
 }
 
 main #studies .studies-content p.description {
-    margin: 1rem 0 1rem 6.5rem;
+    margin: .5rem 0;
     width: 50%;
 }
 
@@ -259,7 +263,10 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    background-color: rgb(25, 25, 25);
+}
+
+footer #footer-content a:first-of-type img{
+    filter: invert(100%);
 }
 
 footer h2 {
@@ -269,6 +276,10 @@ footer h2 {
 footer a img {
     height: 5vh;
     margin-bottom: 2rem;
+}
+
+#about h2, #projects h2, #experience h2, #studies h2 {
+    color: rgb(68, 34, 141);
 }
 
 @media (max-width: 768px) {

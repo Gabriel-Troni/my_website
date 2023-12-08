@@ -12,7 +12,6 @@ main #projects h2 {
 
 main #projects .projects-content {
     padding: 3vh 0;
-    background-color: rgb(25, 25, 25);
     width: 400%;
     height: auto;
     display: flex;
@@ -65,14 +64,14 @@ main #projects .projects-content .manual-nav label, .auto-nav div {
 }
 
 main #projects .projects-content .manual-nav label:hover {
-    background-color: aliceblue;
+    background-color: rgb(68, 34, 141);
 }
 
 main #projects .projects-content 
 #radio-btn1:checked ~ .auto-nav div:nth-child(1), 
 #radio-btn2:checked ~ .auto-nav div:nth-child(2), 
 #radio-btn3:checked ~ .auto-nav div:nth-child(3) {
-    background-color: aliceblue;
+    background-color: rgb(68, 34, 141);
 }
 
 main #projects .projects-content #radio-btn1:checked ~ .slide-box {
