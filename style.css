@@ -7,7 +7,7 @@ body {
     color: white;
     margin: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background2-sub.jpg);
-    background-size:contain;
+    background-size: contain;
 }
 
 header {
@@ -19,13 +19,13 @@ header {
     position: fixed;
     top: 0;
     height: 5rem;
-    width: 100%;
+    width: 100vw;
     z-index: 5;
 }
 
 header #home {
     font-size: 1rem;
-    margin: 0 0 0 1rem;
+    margin: 1rem 0 0 1rem;
 }
 
 header #home h1 {
@@ -42,31 +42,7 @@ header #home p {
 }
 
 header nav {
-    width: 100%;
     display: none;
-}
-
-header nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    margin-bottom: 1rem;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.25rem;
-    transition: .1s;
-}
-
-header nav ul li a:hover {
-    border-bottom: 3px solid white;
 }
 
 header .language {
@@ -97,19 +73,30 @@ header .language select option {
 
 @media (min-width: 768px) {
     header nav {
-        display: flex;
         width: 60%;
+        display: flex;
+        justify-content: flex-end;
     }
-
+    
     header nav ul {
-        flex-direction: row;
         width: 100%;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
-    header nav ul li {
-        margin-bottom: 0;
-        margin-left: 1rem;
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        transition: .1s;
+    }
+    
+    header nav ul li a:hover {
+        border-bottom: 3px solid white;
     }
 }
 
@@ -282,6 +269,12 @@ footer a img {
     color: rgb(68, 34, 141);
 }
 
+
+
+
+
+
+/* 
 @media (max-width: 768px) {
 
     body {
@@ -366,4 +359,4 @@ footer a img {
     main #about .about-content p {
         max-width: 100%;
     }
-}
+} */
