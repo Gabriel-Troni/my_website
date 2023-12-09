@@ -151,18 +151,37 @@ main #about .about-content {
 
 main #about .about-content .card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 main #about .about-content img {
-    height: 40vh;
+    height: 20vh;
+    margin-right: 0;
+    margin-bottom: 2rem;
 }
 
 main #about .about-content p {
-    max-width: 25%;
-    margin: 0;
+    margin: 1rem;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    main #about .about-content .card {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    main #about .about-content img {
+        height: 40vh;
+    }
+
+    main #about .about-content p {
+        max-width: 25%;
+        margin: 0;
+    }
 }
 
 main #experience {
