@@ -4,7 +4,7 @@ Este é o repositório do meu site pessoal, utilizado como um portfólio para ex
 
 This is the repository of my personal website, utilized as a portfolio to showcase my projects, education, experience, contact information, and more. You can access it via the link below:
 
-<a href="gabriel-troni.vercel.app" target="_blank">Website</a>.
+<a href="https://gabriel-troni.vercel.app" target="_blank">Website</a>.
 ## Overview
 
 Meu site pessoal é por onde compartilho informações sobre mim, meus projetos, habilidades técnicas e experiências profissionais. É uma maneira de apresentar meu trabalho de forma organizada e acessível a potenciais empregadores, colaboradores e interessados. O site conta com uma tradução nativa para português brasileiro e inglês.
