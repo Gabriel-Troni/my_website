@@ -198,14 +198,13 @@ main #experience h2 {
 main #experience .experience-content {
     padding: 3vh 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr;
 }
 
 main #experience .experience-content .experience-title {
     margin: .5rem 0;
-    width: 20vw;
-    justify-self: right;
+    justify-self: center;
+    text-align: center;
 }
 
 main #experience .experience-content .experience-title h3 {
@@ -217,8 +216,27 @@ main #experience .experience-content .experience-title p {
 }
 
 main #experience .experience-content p.description {
-    margin: .5rem 0;
-    width: 50%;
+    margin: .5rem 1rem;
+    justify-self: center;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    main #experience .experience-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    main #experience .experience-content .experience-title {
+        justify-self: right;
+        width: 20vw;
+        text-align: left;
+    }
+
+    main #experience .experience-content p.description {
+        justify-self: left;
+        width: 50%;
+    }
 }
 
 main #studies {
@@ -238,20 +256,20 @@ main #studies p.note {
 }
 
 main #studies .studies-content {
-    padding: 3vh 0;
+    padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr;
 }
 
 main #studies .studies-content .studies-title {
     margin: .5rem 0;
-    width: 20vw;
-    justify-self: right;
+    justify-self: center;
+    text-align: center;
 }
 
 main #studies .studies-content .studies-title h3 {
-    margin: 0;
+    margin: 0 auto;
+    width: 60vw;
 }
 
 main #studies .studies-content .studies-title p {
@@ -259,9 +277,36 @@ main #studies .studies-content .studies-title p {
 }
 
 main #studies .studies-content p.description {
+    padding-bottom: 2rem;
     margin: .5rem 0;
-    width: 50%;
+    justify-self: center;
+    text-align: justify;
 }
+
+@media (min-width: 768px) {
+    main #studies .studies-content {
+        padding: 1rem 0;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    main #studies .studies-content .studies-title {
+        justify-self: right;
+        text-align: left;
+        width: 20vw;
+    }
+
+    main #studies .studies-content .studies-title h3 {
+        margin: 0;
+        width: 20vw;
+    }
+
+    main #studies .studies-content p.description {
+        padding-bottom: 0;
+        justify-self: left;
+        width: 50%;
+    }
+}   
 
 footer {
     display: flex;
