@@ -11,7 +11,7 @@ main #projects h2 {
 }
 
 main #projects .projects-content {
-    width: 300%;
+    width: 500%;
     height: auto;
     display: flex;
     position: relative;
@@ -49,7 +49,7 @@ main #projects .projects-content .slide-box .project-text p {
 main #projects .projects-content .manual-nav, .auto-nav {
     position: absolute;
     bottom: 0;
-    width: 33.33%;
+    width: 20%;
     display: flex;
     justify-content: center;
 }

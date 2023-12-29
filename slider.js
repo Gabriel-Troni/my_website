@@ -4,12 +4,14 @@ var radioBtn = document.querySelectorAll('.radio-btn')
 var btn1 = document.getElementById('radio-btn1')
 var btn2 = document.getElementById('radio-btn2')
 var btn3 = document.getElementById('radio-btn3')
+var btn4 = document.getElementById('radio-btn4')
+var btn5 = document.getElementById('radio-btn5')
 
 function startInterval() {
         interval = setInterval(() => {
             document.getElementById('radio-btn' + count).checked = true
             count++
-            if (count > 3) {
+            if (count > 5) {
                 count = 1
             }
         }, 7000)
@@ -33,5 +35,13 @@ btn2.addEventListener('click', () => {
 })
 
 btn3.addEventListener('click', () => {
+    delayInterval()
+})
+
+btn4.addEventListener('click', () => {
+    delayInterval()
+})
+
+btn5.addEventListener('click', () => {
     delayInterval()
 })
