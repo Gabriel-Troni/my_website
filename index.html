@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,184 +9,184 @@
     <title>Gabriel's Website</title>
 </head>
 <body>
-    <header>
-        <div id="home">
-            <h1><a href="#splash">Gabriel Troni</a></h1>
-            <p>Desenvolvedor SQL</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#studies">Estudos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="language">
-            <select id="languageSelect">
-                <option value="PTBR">PT-BR</option>
-                <option value="EN">EN</option>
-            </select>
-        </div>
-    </header>
-    <main>
-        <section id="splash">
-            <div class="splash-content">
-                <!-- <img src="./images/main_photo.png" alt="Foto do Gabriel"> -->
-                <div class="splash-text">
-                    <h2>Olá, eu sou o Gabriel</h2>
-                    <p>Bem vindo ao meu site!</p>
-                </div>
+<header>
+    <div id="home">
+        <h1><a href="#splash">Gabriel Troni</a></h1>
+        <p>Desenvolvedor SQL</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#studies">Estudos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="language">
+        <select id="languageSelect">
+            <option value="PTBR">PT-BR</option>
+            <option value="EN">EN</option>
+        </select>
+    </div>
+</header>
+<main>
+    <section id="splash">
+        <div class="splash-content">
+            <!-- <img src="./images/main_photo.png" alt="Foto do Gabriel"> -->
+            <div class="splash-text">
+                <h2>Olá, eu sou o Gabriel</h2>
+                <p>Bem vindo ao meu site!</p>
             </div>
-        </section>
-        <section id="about">
-            <h2>Sobre mim</h2>
-            <div class="about-content">
-                <div class="card card1">
-                    <img src="./images/about.png" alt="my-photo"> 
+        </div>
+    </section>
+    <section id="about">
+        <h2>Sobre mim</h2>
+        <div class="about-content">
+            <div class="card card1">
+                <img src="./images/about.png" alt="my-photo"> 
+                <p>
+                    Nasci em Ji-Paraná, no Estado de Rondônia e foi onde vivi por 20 anos.
+                    Em 2023 me mudei para Curitiba, no Paraná, para fazer faculdade.
+                    Estou no terceiro período de Análise e Desenvolvimento de Sistemas pela 
+                    Universidade Federal do Paraná (UFPR).
+                    Atualmente trabalho como Aprendiz de TI na APK Logística e Transporte.
+                    Sou apaixonado por tecnologia e por aprender coisas novas.
+                    Meus hobbies são jogar no computador, assistir animes e jogar RPG.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects-content">
+            <input type="radio" name="radio-btn" id="radio-btn1">
+            <input type="radio" name="radio-btn" id="radio-btn2">
+            <input type="radio" name="radio-btn" id="radio-btn3">
+
+            <div class="slide-box first">
+                <a href="https://github.com/Gabriel-Troni/country_search" target="_blank"><img src="./images/project1.PNG" alt="Tela do projeto 'Pesquisa de Países'"></a>
+                <div class="project-text">
+                    <h3>Pesquisa de Países</h3>
                     <p>
-                        Nasci em Ji-Paraná, no Estado de Rondônia e foi onde vivi por 20 anos.
-                        Em 2023 me mudei para Curitiba, no Paraná, para fazer faculdade.
-                        Estou no terceiro período de Análise e Desenvolvimento de Sistemas pela 
-                        Universidade Federal do Paraná (UFPR).
-                        Atualmente trabalho como Aprendiz de TI na APK Logística e Transporte.
-                        Sou apaixonado por tecnologia e por aprender coisas novas.
-                        Meus hobbies são jogar no computador, assistir animes e jogar RPG.
+                        Tecnologias utilizadas: PHP, SQL, HTML, Bootstrap e CSS
+                    </p>
+                    <p>
+                        Projeto desenvolvido com Matheus Grego do Amaral para a disciplina de Programação Web I. O objetivo era criar um site que se conectasse a um banco de dados e, em resposta a uma requisição POST, retornasse os resultados da pesquisa em tela seguindo os filtros, ordenação e limite de resultados inseridos pelo usuário. Todos os campos de input deveriam passar por sanitização e demais validações.
                     </p>
                 </div>
             </div>
-        </section>
-        <section id="projects">
-            <h2>Projetos</h2>
-            <div class="projects-content">
-                <input type="radio" name="radio-btn" id="radio-btn1">
-                <input type="radio" name="radio-btn" id="radio-btn2">
-                <input type="radio" name="radio-btn" id="radio-btn3">
+            <div class="slide-box">
+                <a href="https://github.com/Gabriel-Troni/crack_the_code_game"><img src="./images/project2.png" alt="Tela do projeto 'Crack the code'"></a>
+                <div class="project-text">
+                    <h3>Crack the Code</h3>
+                    <p>
+                        Tecnologias utilizadas: PHP, SQL, Javascript, CSS e HTML
+                    </p>
+                    <p>
+                        Projeto desenvolvido com Matheus Grego, Raul Bana e Rodolfo dos Santos para a disciplina de Programação Web I. O objetivo era criar um jogo de digitação que possuísse base de dados própria para armazenar dados de cada jogador, como: login, senha, nome e pontuação em cada partida. O jogo conta também com um sistema de ligas e ranking. Neste projeto, trabalhei principalmente com a modelagem do banco de dados, consultas SQL e com validações em back end.
+                    </p>
+                </div>
+            </div>
+            <div class="slide-box">
+                <a href="https://github.com/Gabriel-Troni/link_aggregator"><img src="./images/project3.png" alt="tela do projeto 'agregador de links'"></a>
+                <div class="project-text">
+                    <h3>Projetos Front End</h3>
+                    <p>
+                        Tecnologias utilizadas: HTML, CSS e Javascript
+                    </p>
+                    <p>
+                        Projetos desenvolvidos durante cursos, bootcamps e maratonas de programação. Entre estes projetos, estão um agregador de links (imagem), clone da Netflix e um jogo da memória. O objetivo principal foi aprender conceitos de front end, como: HTML semântico, responsividade, flexbox, grid, animações e manipulação de D.O.M.
+                    </p>
+                </div>
+            </div>
 
-                <div class="slide-box first">
-                    <a href="https://github.com/Gabriel-Troni/country_search" target="_blank"><img src="./images/project1.PNG" alt="Tela do projeto 'Pesquisa de Países'"></a>
-                    <div class="project-text">
-                        <h3>Pesquisa de Países</h3>
-                        <p>
-                            Tecnologias utilizadas: PHP, SQL, HTML, Bootstrap e CSS
-                        </p>
-                        <p>
-                            Projeto desenvolvido com Matheus Grego do Amaral para a disciplina de Programação Web I. O objetivo era criar um site que se conectasse a um banco de dados e, em resposta a uma requisição POST, retornasse os resultados da pesquisa em tela seguindo os filtros, ordenação e limite de resultados inseridos pelo usuário. Todos os campos de input deveriam passar por sanitização e demais validações.
-                        </p>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <a href="https://github.com/Gabriel-Troni/crack_the_code_game"><img src="./images/project2.png" alt="Tela do projeto 'Crack the code'"></a>
-                    <div class="project-text">
-                        <h3>Crack the Code</h3>
-                        <p>
-                            Tecnologias utilizadas: PHP, SQL, Javascript, CSS e HTML
-                        </p>
-                        <p>
-                            Projeto desenvolvido com Matheus Grego, Raul Bana e Rodolfo dos Santos para a disciplina de Programação Web I. O objetivo era criar um jogo de digitação que possuísse base de dados própria para armazenar dados de cada jogador, como: login, senha, nome e pontuação em cada partida. O jogo conta também com um sistema de ligas e ranking. Neste projeto, trabalhei principalmente com a modelagem do banco de dados, consultas SQL e com validações em back end.
-                        </p>
-                    </div>
-                </div>
-                <div class="slide-box">
-                    <a href="https://github.com/Gabriel-Troni/link_aggregator"><img src="./images/project3.png" alt="tela do projeto 'agregador de links'"></a>
-                    <div class="project-text">
-                        <h3>Projetos Front End</h3>
-                        <p>
-                            Tecnologias utilizadas: HTML, CSS e Javascript
-                        </p>
-                        <p>
-                            Projetos desenvolvidos durante cursos, bootcamps e maratonas de programação. Entre estes projetos, estão um agregador de links (imagem), clone da Netflix e um jogo da memória. O objetivo principal foi aprender conceitos de front end, como: HTML semântico, responsividade, flexbox, grid, animações e manipulação de D.O.M.
-                        </p>
-                    </div>
-                </div>
+            <div class="auto-nav">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
 
-                <div class="auto-nav">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-
-                <div class="manual-nav">
-                    <label for="radio-btn1"></label>
-                    <label for="radio-btn2"></label>
-                    <label for="radio-btn3"></label>
-                </div>
+            <div class="manual-nav">
+                <label for="radio-btn1"></label>
+                <label for="radio-btn2"></label>
+                <label for="radio-btn3"></label>
             </div>
-        </section>
-        <section id="experience">
-            <h2>Experiência Profissional</h2>
-            <div class="experience-content">
-                <div class="experience-title">
-                    <h3>Aprendiz de TI</h3>
-                    <p>APK Logística e Transporte</p>
-                    <p>Março de 2023 - Atualmente</p>
-                </div>
-                <p class="description">
-                    Principais atividades: Criação e manutenção de relatórios, views e stored procedures em MSSQL, otimização de consultas SQL, criação de dashboard em Excel, desenvolvimento de aplicação corporativa em Jquery, PHP e MySQL, documentação e suporte ao usuário em sistema ERP e demais sistemas.
-                </p>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Experiência Profissional</h2>
+        <div class="experience-content">
+            <div class="experience-title">
+                <h3>Aprendiz de TI</h3>
+                <p>APK Logística e Transporte</p>
+                <p>Março de 2023 - Atualmente</p>
             </div>
-        </section>
-        <section id="studies">
-            <h2>Estudos e Premiações</h2>
-            <p class="note">Nota: A lista completa de formações está disponível no meu LinkedIn</p>
-            <div class="studies-content">
-                <div class="studies-title">
-                    <h3>Livro: Aprendendo SQL</h3>
-                    <p>Editora O'Reilly/Novatech</p>
-                    <p>Julho de 2023</p>
-                </div>
-                <p class="description">
-                    Neste livro aprendi desde o básico de SQL até conceitos mais avançados, como: manipulação de dados, subqueries, joins, views, transações, índices e metadados.
-                </p>
-                <div class="studies-title">
-                    <h3>Curso: Inglês intermediário (B1)</h3>
-                    <p>Busuu</p>
-                    <p>Julho de 2023</p>
-                </div>
-                <p class="description">
-                    Neste curso melhorei especialmente minha capacidade de ler e interpretar textos, podendo compreender artigos científicos com relativa facilidade, opinar em tópicos variados, compreender o inglês falado e aumentar meu vocabulário.
-                </p>
-                <div class="studies-title">
-                    <h3>Curso: MySQL</h3>
-                    <p>Curso em Vídeo</p>
-                    <p>Março de 2023 - Junho de 2023</p>
-                </div>
-                <p class="description">
-                    Neste curso aprendi a criar bancos de dados, criar e alterar tabelas em MySQL, inserir, atualizar e deletar dados e fazer consultas com filtros, ordenação, agrupamento e junção de tabelas. Também aprendi a gerar dump via workbench.
-                </p>
-                <div class="studies-title">
-                    <h3>Premiação: Medalha de Bronze</h3>
-                    <p>OBMEP</p>
-                    <p>2014 e 2017</p>
-                </div>
-                <p class="description">
-                    Premiação por bom desempenho na Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP). Quando recebi as premiações de 2014 e 2017, estava cursando o 6° e o 9° anos do ensino fundamental, respectivamente.
-                </p>
-                <div class="studies-title">
-                    <h3>Premiação: Menção Honrosa</h3>
-                    <p>OBMEP</p>
-                    <p>2015</p>
-                </div>
-                <p class="description">
-                    Premiação por bom desempenho na Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP). Quando recebi a premiação, estava cursando o 7° ano do ensino fundamental, aos 12 anos de idade.
-                </p>
+            <p class="description">
+                Principais atividades: Criação e manutenção de relatórios, views e stored procedures em MSSQL, otimização de consultas SQL, criação de dashboard em Excel, desenvolvimento de aplicação corporativa em Jquery, PHP e MySQL, documentação e suporte ao usuário em sistema ERP e demais sistemas.
+            </p>
+        </div>
+    </section>
+    <section id="studies">
+        <h2>Estudos e Premiações</h2>
+        <p class="note">Nota: A lista completa de formações está disponível no meu LinkedIn</p>
+        <div class="studies-content">
+            <div class="studies-title">
+                <h3>Livro: Aprendendo SQL</h3>
+                <p>Editora O'Reilly/Novatech</p>
+                <p>Julho de 2023</p>
             </div>
-        </section>
-        <footer>
-            <div id="footer-content">
-                <h2 id="contact">Contato</h2>
-                <a href="https://github.com/Gabriel-Troni" target="_blank"><img src="./images/github.png" alt="logo do github"></a>
-                <a href="mailto:troni.gabriel.10@gmail.com?cc=gabriel.troni@ufpr.br" target="_blank"><img src="./images/gmail.png" alt="logo do gmail"></a>
-                <a href="https://www.instagram.com/gabrieltroni/" target="_blank"><img src="./images/instagram.png" alt="logo do instagram"></a>
-                <a href="https://www.linkedin.com/in/gabriel-troni/" target="_blank"><img src="./images/linkedin.png" alt="logo do linkedin"></a>
-                <a href="https://api.whatsapp.com/send?phone=5569992182298" target="_blank
-                "><img src="./images/whatsapp.png" alt="logo do whatsapp"></a>
-                <p>2023 &bull; Gabriel Alamartini Troni</p>
+            <p class="description">
+                Neste livro aprendi desde o básico de SQL até conceitos mais avançados, como: manipulação de dados, subqueries, joins, views, transações, índices e metadados.
+            </p>
+            <div class="studies-title">
+                <h3>Curso: Inglês intermediário (B1)</h3>
+                <p>Busuu</p>
+                <p>Julho de 2023</p>
             </div>
-        </footer>
-    </main>
-    <script src="./slider.js"></script>
-    <script type="module" src="./translate.js"></script>
+            <p class="description">
+                Neste curso melhorei especialmente minha capacidade de ler e interpretar textos, podendo compreender artigos científicos com relativa facilidade, opinar em tópicos variados, compreender o inglês falado e aumentar meu vocabulário.
+            </p>
+            <div class="studies-title">
+                <h3>Curso: MySQL</h3>
+                <p>Curso em Vídeo</p>
+                <p>Março de 2023 - Junho de 2023</p>
+            </div>
+            <p class="description">
+                Neste curso aprendi a criar bancos de dados, criar e alterar tabelas em MySQL, inserir, atualizar e deletar dados e fazer consultas com filtros, ordenação, agrupamento e junção de tabelas. Também aprendi a gerar dump via workbench.
+            </p>
+            <div class="studies-title">
+                <h3>Premiação: Medalha de Bronze</h3>
+                <p>OBMEP</p>
+                <p>2014 e 2017</p>
+            </div>
+            <p class="description">
+                Premiação por bom desempenho na Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP). Quando recebi as premiações de 2014 e 2017, estava cursando o 6° e o 9° anos do ensino fundamental, respectivamente.
+            </p>
+            <div class="studies-title">
+                <h3>Premiação: Menção Honrosa</h3>
+                <p>OBMEP</p>
+                <p>2015</p>
+            </div>
+            <p class="description">
+                Premiação por bom desempenho na Olimpíada Brasileira de Matemática das Escolas Públicas (OBMEP). Quando recebi a premiação, estava cursando o 7° ano do ensino fundamental, aos 12 anos de idade.
+            </p>
+        </div>
+    </section>
+    <footer>
+         <div id="footer-content">
+            <h2 id="contact">Contato</h2>
+            <a href="https://github.com/Gabriel-Troni" target="_blank"><img src="./images/github.png" alt="logo do github"></a>
+            <a href="mailto:troni.gabriel.10@gmail.com?cc=gabriel.troni@ufpr.br" target="_blank"><img src="./images/gmail.png" alt="logo do gmail"></a>
+            <a href="https://www.instagram.com/gabrieltroni/" target="_blank"><img src="./images/instagram.png" alt="logo do instagram"></a>
+            <a href="https://www.linkedin.com/in/gabriel-troni/" target="_blank"><img src="./images/linkedin.png" alt="logo do linkedin"></a>
+            <a href="https://api.whatsapp.com/send?phone=5569992182298" target="_blank
+            "><img src="./images/whatsapp.png" alt="logo do whatsapp"></a>
+            <p>2023 &bull; Gabriel Alamartini Troni</p>
+        </div>
+    </footer>
+</main>
+<script src="./slider.js"></script>
+<script type="module" src="./translate.js"></script>
 </body>
 </html>
