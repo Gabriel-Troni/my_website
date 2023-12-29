@@ -86,11 +86,11 @@ main #projects .projects-content #radio-btn3:checked ~ .slide-box {
     transform: translateX(-200vw);
 }
 
-main #projects .projects-content #radio-btn3:checked ~ .slide-box {
+main #projects .projects-content #radio-btn4:checked ~ .slide-box {
     transform: translateX(-300vw);
 }
 
-main #projects .projects-content #radio-btn3:checked ~ .slide-box {
+main #projects .projects-content #radio-btn5:checked ~ .slide-box {
     transform: translateX(-400vw);
 }
 
