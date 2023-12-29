@@ -86,6 +86,14 @@ main #projects .projects-content #radio-btn3:checked ~ .slide-box {
     transform: translateX(-200vw);
 }
 
+main #projects .projects-content #radio-btn3:checked ~ .slide-box {
+    transform: translateX(-300vw);
+}
+
+main #projects .projects-content #radio-btn3:checked ~ .slide-box {
+    transform: translateX(-400vw);
+}
+
 @media (min-width: 768px) {
     main #projects .projects-content .slide-box img {
         height: 36vh;
@@ -96,31 +104,3 @@ main #projects .projects-content #radio-btn3:checked ~ .slide-box {
         max-width: 50%;
     }
 }
-
-/* @media (min-width: 768px) {
-    main #projects .projects-content .slide-box {
-        width: 33.33%;
-    }
-    
-    main #projects .projects-content .manual-nav, .auto-nav {
-        width: 33.33%;
-    }
-} */
-
-/* @media (max-width: 768px) {
-    main #projects .projects-content {
-        width: 100%;
-    }
-    
-    main #projects .projects-content .slide-box {
-        width: 300%;
-    }
-    
-    main #projects .projects-content .manual-nav, .auto-nav {
-        width: 100%;
-    }
-
-    main #projects .projects-content .slide-box img {
-        width: 100vw;
-    }
-} */
