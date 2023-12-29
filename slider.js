@@ -7,6 +7,7 @@ var btn3 = document.getElementById('radio-btn3')
 var btn4 = document.getElementById('radio-btn4')
 var btn5 = document.getElementById('radio-btn5')
 
+
 function startInterval() {
         interval = setInterval(() => {
             document.getElementById('radio-btn' + count).checked = true

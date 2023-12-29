@@ -11,7 +11,7 @@ main #projects h2 {
 }
 
 main #projects .projects-content {
-    width: 500%;
+    width: 500vw;
     height: auto;
     display: flex;
     position: relative;
@@ -23,7 +23,7 @@ main #projects .projects-content input {
 
 main #projects .projects-content .slide-box {
     text-align: center;
-    width: calc(33.33% - 2rem);
+    width: calc(100vw - 2rem);
     height: auto;
     transition: 1s;
     margin: 1rem;
@@ -70,7 +70,9 @@ main #projects .projects-content .manual-nav label:hover {
 main #projects .projects-content 
 #radio-btn1:checked ~ .auto-nav div:nth-child(1), 
 #radio-btn2:checked ~ .auto-nav div:nth-child(2), 
-#radio-btn3:checked ~ .auto-nav div:nth-child(3) {
+#radio-btn3:checked ~ .auto-nav div:nth-child(3),
+#radio-btn4:checked ~ .auto-nav div:nth-child(4),
+#radio-btn5:checked ~ .auto-nav div:nth-child(5) {
     background-color: rgb(68, 34, 141);
 }
 
