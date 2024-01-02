@@ -6,7 +6,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
     margin: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background2-sub.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background2.jpg);
     background-size: contain;
 }
 
@@ -102,7 +102,7 @@ header .language select option {
 
 main #splash {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background.jpg);
     background-size: cover;
 }
 
@@ -332,95 +332,3 @@ footer a img {
 #about h2, #projects h2, #experience h2, #studies h2 {
     color: rgb(68, 34, 141);
 }
-
-
-
-
-
-
-/* 
-@media (max-width: 768px) {
-
-    body {
-        font-size: 16px;
-    }
-
-    header {
-        height: 6rem;
-    }
-
-    header #home {
-        font-size: 1.2rem;
-    }
-
-    header #home h1 {
-        font-size: 1.5rem;
-    }
-
-    header #home p {
-        font-size: 1rem;
-    }
-
-    header nav {
-        display: flex;
-    }
-
-    header nav ul {
-        flex-direction: row;
-    }
-
-    header nav ul li {
-        margin-bottom: 0;
-    }
-
-    header nav ul li a {
-        font-size: 1rem;
-    }
-
-    main #splash .splash-content {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    main #splash .splash-content img {
-        height: 40vh;
-    }
-
-    main #splash .splash-content .splash-text {
-        margin-left: 0;
-        margin-top: 2rem;
-    }
-
-    main #splash .splash-content .splash-text h2 {
-        font-size: 2.5rem;
-    }
-
-    main #splash .splash-content .splash-text p {
-        font-size: 1.2rem;
-    }
-
-    main #about {
-        padding: 3rem 0;
-    }
-
-    main #about h2 {
-        font-size: 2.5rem;
-    }
-
-    main #about .about-content .card {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: flex-start;
-    }
-
-    main #about .about-content img {
-        height: 20vh;
-        margin-right: 0;
-        margin-bottom: 2rem;
-    }
-
-    main #about .about-content p {
-        max-width: 100%;
-    }
-} */
