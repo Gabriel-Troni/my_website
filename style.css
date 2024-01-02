@@ -6,7 +6,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
     margin: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background2-sub.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background2-sub.jpg);
     background-size: contain;
 }
 
@@ -102,7 +102,7 @@ header .language select option {
 
 main #splash {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background2.jpg);
     background-size: cover;
 }
 
