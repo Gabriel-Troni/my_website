@@ -1,23 +1,17 @@
 var interval = null
-var count = 1
+var count = 0
 var radioBtn = document.querySelectorAll('.radio-btn')
-var btn1 = document.getElementById('radio-btn1')
-var btn2 = document.getElementById('radio-btn2')
-var btn3 = document.getElementById('radio-btn3')
-var btn4 = document.getElementById('radio-btn4')
-var btn5 = document.getElementById('radio-btn5')
-
 
 function startInterval() {
         interval = setInterval(() => {
-            document.getElementById('radio-btn' + count).checked = true
-            count++
-            if (count > 5) {
-                count = 1
+            if (count > 3) {
+                count = 0
+            } else {
+                count++
             }
+            radioBtn[count].checked = true
         }, 7000)
 }
-
 startInterval()
 
 function delayInterval() {
@@ -27,22 +21,27 @@ function delayInterval() {
     }, 30000)
 }
 
-btn1.addEventListener('click', () => {
+radioBtn[0].addEventListener('click', () => {
+    count = 0
     delayInterval()
 })
 
-btn2.addEventListener('click', () => {
+radioBtn[1].addEventListener('click', () => {
+    count = 1
     delayInterval()
 })
 
-btn3.addEventListener('click', () => {
+radioBtn[2].addEventListener('click', () => {
+    count = 2
     delayInterval()
 })
 
-btn4.addEventListener('click', () => {
+radioBtn[3].addEventListener('click', () => {
+    count = 3
     delayInterval()
 })
 
-btn5.addEventListener('click', () => {
+radioBtn[4].addEventListener('click', () => {
+    count = 4
     delayInterval()
 })
