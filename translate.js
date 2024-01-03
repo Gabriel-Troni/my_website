@@ -1,9 +1,9 @@
 function changeLanguage() {
   var language = document.getElementById('languageSelect').value;
   if (language === 'EN') {
-    window.location.href = 'https://gabriel-troni.vercel.app/en/';
+    window.location.href = 'https://gabrieltroni.com/en/';
   } else if (language === 'PTBR') {
-    window.location.href = 'https://gabriel-troni.vercel.app/';
+    window.location.href = 'https://gabrieltroni.com/';
   }
 }
 
