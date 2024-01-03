@@ -16,9 +16,9 @@ startInterval()
 
 function delayInterval() {
     clearInterval(interval)
-    setTimeout(() => {
+    /*setTimeout(() => {
         startInterval()
-    }, 30000)
+    }, 30000)*/
 }
 
 radioBtn[0].addEventListener('click', () => {
