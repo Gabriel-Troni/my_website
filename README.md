@@ -17,8 +17,8 @@ Currently, my website only contains the highlighted education. If you want to se
 
 ## Screenshots
 <div style="display: flex;">
-  <img src="./images/websitePrint1.png" alt="Website's print 1" style="">
-  <img src="./images/websitePrint2.png" alt="Website's print 2" style="">
-  <img src="./images/websitePrint3.png" alt="Website's print 3" style="">
-  <img src="./images/websitePrint4.png" alt="Website's print 4" style="">
+  <img src="./images/websitePrint1.png" alt="Website's print 1" style="width: 20%">
+  <img src="./images/websitePrint2.png" alt="Website's print 2" style="width: 70%">
+  <img src="./images/websitePrint4.png" alt="Website's print 4" style="width: 70%">
+  <img src="./images/websitePrint3.png" alt="Website's print 3" style="width: 20%">
 </div>
