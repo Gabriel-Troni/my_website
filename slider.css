@@ -64,7 +64,7 @@ main #projects .projects-content .manual-nav label, .auto-nav div {
 }
 
 main #projects .projects-content .manual-nav label:hover {
-    background-color: rgb(68, 34, 141);
+    background-color: white;
 }
 
 main #projects .projects-content 
@@ -73,7 +73,7 @@ main #projects .projects-content
 #radio-btn3:checked ~ .auto-nav div:nth-child(3),
 #radio-btn4:checked ~ .auto-nav div:nth-child(4),
 #radio-btn5:checked ~ .auto-nav div:nth-child(5) {
-    background-color: rgb(68, 34, 141);
+    background-color: white;
 }
 
 main #projects .projects-content #radio-btn1:checked ~ .slide-box {
