@@ -3,7 +3,7 @@ My personal website servers as a plataform where I share information about mysel
 
 Currently, my website only contains the highlighted education. If you want to see the entire list of courses, bootcamps, awards and other extracurricular activities, visit my LinkedIn via the link below:
 
-<a href="https://www.linkedin.com/in/gabriel-troni/">LinkedIn</a>.
+<a href="https://www.linkedin.com/in/gabriel-troni/">LinkedIn </a>.
 
 ## Technologies Used
 - Javascript
